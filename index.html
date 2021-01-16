@@ -47,7 +47,14 @@
             </figure>
             
             
-            <form>
+            <form>      
+                <fieldset>
+                    <legend>favorite chocolate?</legend>
+                    <input type="radio"><label for="white">white</label><br>
+                    <input type="radio"><label for="milk">milk</label><br>
+                    <input type="radio"><label for="dark">dark</label><br>
+                </fieldset><br>
+                
                 <label for="drink">favorite drink?</label>
                 <select name="drink-choices" id="drink">
                     <option>select</option>
@@ -62,25 +69,26 @@
                     </outgroup>
                 </select><br>
             
-                <fieldset>
-                    <legend>favorite chocolate?</legend>
-                    <input type="radio"><label for="white">white</label><br>
-                    <input type="radio"><label for="milk">milk</label><br>
-                    <input type="radio"><label for="dark">dark</label><br>
-                </fieldset><br>
-            
                 <label for="text">text area:</label>
                 <textarea name="box" rows="5" cols="25">Think outside the box!</textarea><br>
             
-          
                 <label for="fruit">favorite fruit?</label>
                 <input list="fruit-choices">
-                <datalist>
+                <datalist id="fruit-choices">
                     <option value="apple">
                     <option value="mango">
                     <option value="honeydew">
                     <option value="strawberry">
                 </datalist><br>
+            
+                <label for="word">enter a random word:</label>
+                <input type="text" id="word" size="15">
+
+                <p>have you voted?</p>
+                <input type="checkbox" id="yes">
+                <label for="yes">YES</label>
+            
+                
             </form>
 
         </main>
