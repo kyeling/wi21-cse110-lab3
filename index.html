@@ -14,44 +14,50 @@
             <p>author: Kyeling</p>
         </header>
         
-        <nav>
+        <nav id="nav">
             <h1>Table of contents</h1>
             <p>The nav component contains navigation materials.</p> 
             <table>
                 <caption>a table of where to find the different HTML elements</caption>
                 <colgroup>
-                    <col span="1" class="content">
-                    <col span="2" class="tags">
+                    <col span="2" class="content-category">
+                    <col span="2" class="tags-locations">
                 </colgroup>
                 <tr>
                     <th>Content Section</th>
                     <th>HTML Elements</th>
                     <th>Tags Included</th>
+                    <th>Section link</th>
                 </tr>
                 <tr>
                     <td>nav</td>
                     <td>table</td>
                     <td>table, tr, td, th, caption, col, colgroup</td>
+                    <td><a href="#nav">link</a></td>
                 </tr>
                 <tr>
                     <td>main</td>
                     <td>inline text semantics</td>
                     <td>b, i, strong, em, code, pre, a, br</td>
+                    <td><a href="#inline">link</a></td>
                 </tr>
                 <tr>
                     <td>main</td>
                     <td>forms</td>
                     <td>form, optgroup, label, fieldset, legend, input, textarea, datalist, select, option</td>
+                    <td><a href="#forms">link</a></td>
                 </tr>
                 <tr>
                     <td>main</td>
                     <td>interactive elements</td>
                     <td>details, summary, button, template</td>
+                    <td><a href="#interactive">link</a></td>
                 </tr>
                 <tr>
                     <td>aside</td>
                     <td>text content</td>
                     <td>div, span, hr, p, ul, ol, li, figure, figcaption</td>
+                    <td><a href="#text-content">link</a></td>
                 </tr>
                 <tr>
                     <td>section</td>
@@ -66,7 +72,7 @@
         <main>
             <h2>Main Section</h2>            
             
-            <h3>Text Content</h3>
+            <h3 id="text-content">Text Content</h3>
             <p>This is a paragraph in main.</p>
             <div>
                 <p>This is the content division element.</p>
@@ -95,7 +101,7 @@
             </figure>
             <hr>
             
-            <h3>Forms and Inputs</h3>
+            <h3 id="forms">Forms and Inputs</h3>
             <form>      
                 <fieldset>
                     <legend>favorite chocolate?</legend>
@@ -160,7 +166,7 @@
             </form>
             <hr>
         
-            <h3>Interactive Features</h3>
+            <h3 id="interactive">Interactive Features</h3>
             <details>
                 <summary>details</summary>
                 I couldn't think of any extra details to add :(
@@ -177,7 +183,7 @@
 
         <aside>
             <h2>Aside</h2>
-            <h3>Inline text semantics</h3>
+            <h3 id="inline">Inline text semantics</h3>
             <p>The aside content is somewhat related to the main content.</p>
             <p>Inline text semantics include:</p>
             <ul>
