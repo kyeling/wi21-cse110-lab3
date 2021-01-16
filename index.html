@@ -15,9 +15,9 @@
         </header>
         
         <nav>
-            <h2>Table of contents</h2>
+            <h1>Table of contents</h1>
             <p>The nav component contains navigation materials.</p> 
-            <table border="1">
+            <table>
                 <caption>a table of where to find the different HTML elements</caption>
                 <colgroup>
                     <col span="1" class="content">
@@ -34,15 +34,17 @@
                     <td>table, tr, td, th, caption, col, colgroup</td>
                 </tr>
                 <tr>
-                    <td rowspan="3">main</td>
+                    <td>main</td>
                     <td>inline text semantics</td>
                     <td>b, i, strong, em, code, pre, a, br</td>
                 </tr>
                 <tr>
+                    <td>main</td>
                     <td>forms</td>
                     <td>form, optgroup, label, fieldset, legend, input, textarea, datalist, select, option</td>
                 </tr>
                 <tr>
+                    <td>main</td>
                     <td>interactive elements</td>
                     <td>details, summary, button, template</td>
                 </tr>
@@ -61,10 +63,9 @@
         <hr>
 
         <main>
-            <h1>Header 1</h1>
-            <h2>Header 2</h2>
-            <h3>Header 3</h3>
+            <h2>Main Section</h2>            
             
+            <h3>Text Content</h3>
             <p>This is a paragraph in main.</p>
             <div>
                 <p>This is the content division element.</p>
@@ -91,8 +92,9 @@
                 <img src="profile.JPG" width="100">
                 <figcaption>This is a figcaption</figcaption>
             </figure>
-            
             <hr>
+            
+            <h3>Forms and Inputs</h3>
             <form>      
                 <fieldset>
                     <legend>favorite chocolate?</legend>
@@ -157,12 +159,13 @@
             </form>
             <hr>
         
+            <h3>Interactive Features</h3>
             <details>
                 <summary>details</summary>
                 I couldn't think of any extra details to add :(
-            </details>
+            </details><br/>
         
-            <button type="button">Clickbait!</button>
+            <button type="button">Clickbait!</button><br/>
 
             <template>
                 <p>hidden image</p>
@@ -220,22 +223,19 @@
                 <video controls width="200"><source src="video.mp4"></video>
             </figure>
             <figure>
-                <p>canvas</p>
-                <canvas id="canvas"></canvas>
-            </figure>
-            <figure>
                 <svg width="50" height="50">
                     <circle r="20" cx="20" cy="20" />
                 </svg>
             </figure>
+            <figure>
+                <p>canvas?</p>
+                <canvas id="canvas"></canvas>
+            </figure>
             <hr>
         </section>
 
-        
-
         <footer>
-            <p>This is the footer.</p>
-            
+            <p>This footer contains a link to the documentation I used to make this site <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"></p>
         </footer>
     </body>
   
