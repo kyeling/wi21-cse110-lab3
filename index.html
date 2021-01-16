@@ -50,11 +50,37 @@
                 <label for="drink">favorite drink?</label>
                 <select name="drink-choices" id="drink">
                     <option>select</option>
-                    <option>water</option>
-                    <option>juice</option>
-                    <option>tea</option>
-                    <option>coffee</option>  
+                    <optgroup label="healthy">
+                        <option>water</option>
+                        <option>tea</option>
+                        <option>coffee</option>  
+                    </optgroup>
+                    <optgroup label="not so healthy">
+                        <option>juice</option>
+                        <option>soda</option>
+                    </outgroup>
                 </select>
+            
+                <fieldset>
+                    <legend>favorite chocolate?</legend>
+                    <input type="radio"><label for="white">white</label><br>
+                    <input type="radio"><label for="milk">milk</label><br>
+                    <input type="radio"><label for="dark">dark</label><br>
+                </fieldset>
+            
+                <label for="text">text area:</label>
+                <textarea name="box" rows="5" cols="25">
+                    Think outside the box!
+                </textarea>
+            
+                <label for="fruit">favorite fruit?</label>
+                <input list="fruit-choices">
+                <datalist>
+                    <option value="apple">
+                    <option value="mango">
+                    <option value="honeydew">
+                    <option value="strawberry">
+                </datalist>
             </form>
 
         </main>
