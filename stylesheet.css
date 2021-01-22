@@ -9,7 +9,7 @@ p {
 
     text-decoration: wavy underline;
     text-align: center;
-    
+
 }
 h1 {
     background-color: rgba(240,53,21,0.5);
@@ -17,8 +17,11 @@ h1 {
 }
 h2 {
     background-color:hsl(217,82%,62%);
+    font-family: "Yusei Magic", sans-serif;
 }
 div {
+    border-style: dotted;
+
     margin-top: 80px;
     margin-bottom: 90px;
     margin-left: 100px;
@@ -36,6 +39,6 @@ nav {
     margin: 1cm,2cm,3cm,4cm;
     padding: 1cm,2cm,3cm,4cm;
 }
-section {
+.section {
     margin: auto;
 }
