@@ -1,0 +1,41 @@
+/* Style sheet for lab 3 */
+p {
+    background-color: rgb(240,53,21);
+    color: #FFF;
+    border-style: solid;
+    border-color: black;
+    border-width: 1%;
+    border-radius: 10pt;
+
+    text-decoration: wavy underline;
+    text-align: center;
+    
+}
+h1 {
+    background-color: rgba(240,53,21,0.5);
+    color: #FFFFFF;
+}
+h2 {
+    background-color:hsl(217,82%,62%);
+}
+div {
+    margin-top: 80px;
+    margin-bottom: 90px;
+    margin-left: 100px;
+    margin-right: 110px;
+
+    padding-top: 110px;
+    padding-bottom: 100px;
+    padding-left: 90px;
+    padding-right: 80px;
+
+    height: 50vh;
+    width: 50vw;
+}
+nav {
+    margin: 1cm,2cm,3cm,4cm;
+    padding: 1cm,2cm,3cm,4cm;
+}
+section {
+    margin: auto;
+}
