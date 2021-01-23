@@ -2,21 +2,24 @@
 <html lang="en">
     
     <head>
-        <title>CSE 110 Lab 2</title>
+        <title>CSE 110 Lab 3</title>
         <meta charset="UTF-8">
         <link href="profile.JPG" rel="aqualine">
         <link href="stylesheet.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet"> -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+        </style>
     </head>
   
-    <body style="background-color: hsla(217,82%,62%,0.5)">
+    <body style="background-color: hsla(217,82%,62%,0.5)" class="grid-container">
         
-        <header>
+        <header class="grid-item-header">
             <p>This is the header.</p>
             <p>author: Kyeling</p>
         </header>
         
-        <nav id="nav">
+        <nav id="nav" class="grid-item-a">
             <h1>Table of contents</h1>
             <p>The nav component contains navigation materials.</p> 
             <table>
@@ -71,12 +74,12 @@
         </nav>
         <hr>
 
-        <main>
+        <main class="grid-item-b">
             <h2>Main Section</h2>            
             
             <h3 id="text-content">Text Content</h3>
             <p>This is a paragraph in main.</p>
-            <div>
+            <div class="box">
                 <p>This is the content division element.</p>
             </div>
             <span>
@@ -183,7 +186,7 @@
             <hr>
         </main>
 
-        <aside>
+        <aside class="grid-item-c">
             <h2>Aside</h2>
             <h3 id="inline">Inline text semantics</h3>
             <p>The aside content is somewhat related to the main content.</p>
@@ -209,45 +212,48 @@
             <hr>
         </aside>
 
-        <section>
+        <section class="grid-item-d">
             <h2>Section</h2>
             <h3 id="imgs">Image and Multimedia</h3>
             <p>The section content stands alone from the main content.</p>
-            <figure>
-                <img src="https://i.pinimg.com/564x/84/61/d1/8461d132ca55e11d6514408b3421db4b.jpg" alt="light" height="100">
-            </figure>
-            <figure>
-                <picture>
-                    <source srcset="https://therightsofnature.org/wp-content/uploads/2018/01/turkey-3048299_1920-1366x550.jpg"
-                            media="(min-width: 1366px)">
-                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg" height="200"
-                         alt="nature">
-                </picture>
-            </figure>
-            <figure>
-                <iframe width="280" height="157" src="https://www.youtube.com/embed/kNgEEsby8fo"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-            </figure>
-            <figure>
-                <audio controls><source src="Recording.m4a">Audio element</audio>
-            </figure>
-            <figure>
-                <video controls width="200"><source src="video.mp4"></video>
-            </figure>
-            <figure>
-                <svg width="50" height="50">
-                    <circle r="20" cx="20" cy="20" />
-                </svg>
-            </figure>
-            <figure>
-                <p>canvas?</p>
-                <canvas id="canvas"></canvas>
-            </figure>
+
+            <div class="flex-container">
+                <figure class="flex-item">
+                    <img src="https://i.pinimg.com/564x/84/61/d1/8461d132ca55e11d6514408b3421db4b.jpg" alt="light" height="100">
+                </figure>
+                <figure class="flex-item">
+                    <picture>
+                        <source srcset="https://therightsofnature.org/wp-content/uploads/2018/01/turkey-3048299_1920-1366x550.jpg"
+                                media="(min-width: 1366px)">
+                        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg" height="200"
+                             alt="nature">
+                    </picture>
+                </figure>
+                <figure class="flex-item">
+                    <iframe width="280" height="157" src="https://www.youtube.com/embed/kNgEEsby8fo"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </figure>
+                <figure class="flex-item">
+                    <audio controls><source src="Recording.m4a">Audio element</audio>
+                </figure>
+                <figure class="flex-item">
+                    <video controls width="200"><source src="video.mp4"></video>
+                </figure>
+                <figure class="flex-item">
+                    <svg width="50" height="50">
+                        <circle r="20" cx="20" cy="20" />
+                    </svg>
+                </figure>
+                <figure class="flex-item">
+                    <canvas id="canvas"></canvas>
+                </figure>
+            </div>
+
             <hr>
         </section>
 
-        <footer>
+        <footer class="grid-item-footer">
             <p>This footer contains a link to the documentation I used to make this site <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML docs</a></p>
         </footer>
     </body>
