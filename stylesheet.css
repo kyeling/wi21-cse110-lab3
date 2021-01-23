@@ -1,9 +1,8 @@
 /* Style sheet for lab 3 */
-/* header {
-    position: sticky;
-    top: 0;
-} */
-p {
+* {
+    color: darkslategray;
+}
+#main-par {
     background-color: rgb(240,53,21);
     color: #FFF;
     border-style: solid;
@@ -15,6 +14,22 @@ p {
     text-align: center;
 
 }
+a[href] {
+    color: darkolivegreen;
+}
+div p {
+    background-color:bisque;
+}
+ul > li {
+    color: darkslateblue;
+}
+h2 + h3 {
+    color:fuchsia;
+}
+h2 ~ h3 {
+    text-decoration: underline;
+}
+
 h1 {
     background-color: rgba(240,53,21,0.5);
     color: #FFFFFF;
@@ -83,6 +98,7 @@ p:active {
 }
 .grid-item-b {
     grid-area: main;
+    flex-shrink: 2;
 }
 .grid-item-c {
     grid-area: aside;
