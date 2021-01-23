@@ -1,4 +1,8 @@
 /* Style sheet for lab 3 */
+/* header {
+    position: sticky;
+    top: 0;
+} */
 p {
     background-color: rgb(240,53,21);
     color: #FFF;
@@ -19,7 +23,7 @@ h2 {
     background-color:hsl(217,82%,62%);
     font-family: "Yusei Magic", sans-serif;
 }
-div {
+div.box {
     border-style: dotted;
 
     margin-top: 80px;
@@ -32,13 +36,82 @@ div {
     padding-left: 90px;
     padding-right: 80px;
 
-    height: 50vh;
-    width: 50vw;
+    height: 20vh;
+    width: 20vw;
 }
 nav {
     margin: 1cm,2cm,3cm,4cm;
     padding: 1cm,2cm,3cm,4cm;
+
+    display: inline;
+
+    max-width: 50%;
+    min-width: 10%;
+    
+    position: static;
 }
-.section {
+aside {
+    position: relative;
+}
+section {
     margin: auto;
+
+    display: inline-block;
+}
+a:hover {
+    color: #ff08ea;
+}
+p:active {
+    color: #ffea08;
+}
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row-reverse;
+}
+.flex-item {
+    flex-grow: 3;
+    border-style: ridge;
+}
+
+.grid-item-header {
+    grid-area: header;
+}
+.grid-item-a {
+    justify-self: center;
+    grid-area: nav;
+}
+.grid-item-b {
+    grid-area: main;
+}
+.grid-item-c {
+    grid-area: aside;
+}
+.grid-item-d {
+    grid-area: section;
+}
+.grid-item-footer {
+    grid-area: footer;
+}
+.grid-container {
+    border-style: double;
+    display: grid;
+    column-gap: 10vw;
+    grid-template-columns: 15vw 10vw 40vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header"
+        "main main nav"
+        "main main section"
+        "aside . section"
+        "footer footer footer";
+}
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+@media screen and (min-width: 1000px) {
+    figure {
+        background-color: aquamarine;
+    }
 }
